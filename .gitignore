@@ -1,0 +1,352 @@
+# Supply Chain Demand Forecasting - .gitignore
+
+# =============================================================================
+# DATA FILES (Large datasets should not be in version control)
+# =============================================================================
+# Raw M5 Competition Data
+*.csv
+calendar.csv
+sell_prices.csv
+sales_train_validation.csv
+sample_submission.csv
+
+# Processed Data Files
+data/
+*.parquet
+*.feather
+*.pickle
+*.pkl
+*.h5
+*.hdf5
+
+# Large Output Files
+outputs/forecasts/
+outputs/reports/
+*.json
+!requirements.json
+!package.json
+
+# =============================================================================
+# PYTHON & JUPYTER
+# =============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# =============================================================================
+# MACHINE LEARNING & DATA SCIENCE
+# =============================================================================
+
+# Model files (can be large)
+*.model
+*.joblib
+*.sav
+models/
+checkpoints/
+mlruns/
+wandb/
+
+# TensorFlow
+*.pb
+saved_model/
+*.ckpt*
+events.out.tfevents.*
+
+# PyTorch
+*.pth
+*.pt
+
+# Scikit-learn
+*.joblib
+
+# Plots and visualizations (can be regenerated)
+outputs/plots/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.pdf
+!documentation_images/
+!readme_images/
+
+# Temporary analysis files
+temp/
+tmp/
+scratch/
+experiments/
+*_temp.*
+*_tmp.*
+
+# =============================================================================
+# OPERATING SYSTEM
+# =============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+
+# =============================================================================
+# IDE & EDITORS
+# =============================================================================
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# PyCharm
+.idea/
+*.swp
+*.swo
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+*~
+*.swp
+*.swo
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# =============================================================================
+# LOGS & TEMPORARY FILES
+# =============================================================================
+
+# Log files
+*.log
+logs/
+*.out
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# =============================================================================
+# CLOUD & DEPLOYMENT
+# =============================================================================
+
+# AWS
+.aws/
+
+# Docker
+Dockerfile.local
+docker-compose.override.yml
+
+# Kubernetes
+*.yaml.local
+*.yml.local
+
+# =============================================================================
+# JUPYTER LAB & NOTEBOOK SPECIFIC
+# =============================================================================
+
+# JupyterLab settings
+.jupyter/
+.local/
+
+# NBextensions
+.nbextensions/
+
+# =============================================================================
+# COLLABORATION & TOOLS
+# =============================================================================
+
+# Playwright (if using for web scraping)
+.playwright-mcp/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
+# Git
+*.orig
+
+# =============================================================================
+# PROJECT SPECIFIC
+# =============================================================================
+
+# Competition submissions (can be regenerated)
+submission_*.csv
+forecast_*.csv
+
+# Cache directories
+.cache/
+cache/
+
+# Configuration files with sensitive data
+config.json
+secrets.json
+.secrets
+
+# Keep these important files
+!README.md
+!requirements.txt
+!setup.py
+!LICENSE
+!.gitignore
+!*.md
