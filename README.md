@@ -1,4 +1,4 @@
-# M5 Supply Chain Demand Forecasting - Portfolio Project
+# M5 Supply Chain Demand Forecasting
 
 [![Python](https://img.shields.io/badge/Python-3.11-blue.svg)](https://python.org)
 [![XGBoost](https://img.shields.io/badge/XGBoost-2.0-green.svg)](https://xgboost.readthedocs.io/)
